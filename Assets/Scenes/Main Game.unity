@@ -275,6 +275,22 @@ PrefabInstance:
       propertyPath: gameOverMoneyText
       value: 
       objectReference: {fileID: 1453775657}
+    - target: {fileID: 5232989873491534599, guid: 5321946108876674e969b3bfb89c0b53, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232989873491534599, guid: 5321946108876674e969b3bfb89c0b53, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232989873491534599, guid: 5321946108876674e969b3bfb89c0b53, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f87426eeb15bbea459c7bb633d191a78, type: 3}
+    - target: {fileID: 5232989873491534599, guid: 5321946108876674e969b3bfb89c0b53, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5665016833282624604, guid: 5321946108876674e969b3bfb89c0b53, type: 3}
       propertyPath: m_Interpolate
       value: 1
@@ -1097,8 +1113,6 @@ TilemapRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1120,7 +1134,6 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
