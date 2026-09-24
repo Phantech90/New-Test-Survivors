@@ -13,8 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public string isMovingParameter = "isMoving";
 
+    [Header("Weapons")]
+    public bool hasAcidBlade = true;
+    public SpriteRenderer acidBladeSprite;
+    public Animator acidBladeAnimator;
+
     [Header("Sprite")]
-    public SpriteRenderer spriteRenderer;
+    public SpriteRenderer playerSpriteRenderer;
     public bool faceRightByDefault = true;
 
     private Rigidbody2D rb;
@@ -29,10 +34,11 @@ public class PlayerMovement : MonoBehaviour
             animator = GetComponent<Animator>();
         }
 
-        if (spriteRenderer == null)
+        if (playerSpriteRenderer == null)
         {
-            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            playerSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
+        acidBladeSprite.enabled = hasAcidBlade;
     }
 
     private void Update()
@@ -121,11 +127,12 @@ public class PlayerMovement : MonoBehaviour
 
         // Update the movement animation.
         animator.SetBool(isMovingParameter, isMoving);
+        acidBladeAnimator.SetBool(isMovingParameter, isMoving);
     }
 
     private void UpdateSpriteFlip()
     {
-        if (spriteRenderer == null)
+        if (playerSpriteRenderer == null)
         {
             return;
         }
@@ -134,11 +141,13 @@ public class PlayerMovement : MonoBehaviour
         // This prevents the sprite from flipping when moving up or down.
         if (moveInput.x > 0f)
         {
-            spriteRenderer.flipX = !faceRightByDefault;
+            playerSpriteRenderer.flipX = !faceRightByDefault;
+            acidBladeSprite.flipX = !faceRightByDefault;
         }
         else if (moveInput.x < 0f)
         {
-            spriteRenderer.flipX = faceRightByDefault;
+            playerSpriteRenderer.flipX = faceRightByDefault;
+            acidBladeSprite.flipX = faceRightByDefault;
         }
     }
 }
