@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f87426eeb15bbea459c7bb633d191a78
+guid: 0bb4295e13fbc21498db59eeb01a875f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3278312273988345779
-    second: d6d1d2b50655a964810ba5592c9200a5_0
+      213: 5269095424910121995
+    second: Buzzbot_0
+  - first:
+      213: 5800666751830188923
+    second: Buzzbot_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,7 +76,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -139,23 +142,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: d6d1d2b50655a964810ba5592c9200a5_0
+      name: Buzzbot_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 25
-        width: 512
-        height: 462
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d402f162b581182d0800000000000000
-      internalID: -3278312273988345779
+      spriteID: a798e92c47af5a140b4cffba0a1bd920
+      internalID: 5269095424910121995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buzzbot_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade60ccdf0c37274d920dfa72de5a179
+      internalID: 5800666751830188923
       vertices: []
       indices: 
       edges: []
@@ -164,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: c1ed7dd20c608c140ab9f0798c421fb3
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +199,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      d6d1d2b50655a964810ba5592c9200a5_0: -3278312273988345779
+      Buzzbot_0: 5269095424910121995
+      Buzzbot_1: 5800666751830188923
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
