@@ -27,6 +27,15 @@ public class PlayerHealthTouchEffect : MonoBehaviour
     {
         // TODO: Check if audioSource is null.
         // If it is, get the AudioSource component from this GameObject.
+        // DONE
+        if (audioSource == null)
+        {
+            return;
+        }
+        else
+        {
+            audioSource.GetComponent<AudioSource>();
+        }
 
 
     }
@@ -36,17 +45,31 @@ public class PlayerHealthTouchEffect : MonoBehaviour
         // TODO: Check whether the object that entered the trigger
         // has the Player tag.
         // If it does not, stop this function.
+        if (other.tag == "Player")
+        {
+            // TODO: Get the PlayerHealth component from the object
+            // that entered the trigger.
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
 
-
-
-        // TODO: Get the PlayerHealth component from the object
-        // that entered the trigger.
-        PlayerHealth playerHealth = null;
+            if (healthChange > 0)
+            {
+                Debug.Log("Item is healing player by " + healthChange);
+                playerHealth.Heal(healthChange);
+            }
+            else if (healthChange < 0)
+            {
+                Debug.Log("Item is damaging player by " + -healthChange);
+                playerHealth.TakeDamage(-healthChange);
+            }
+            else { Debug.Log("Item value is 0. Nothing Changed"); }
+        }
+        else { return; }
 
 
 
         // TODO: Check whether playerHealth is null.
         // If it is, stop this function.
+        // DONE
 
 
 
@@ -54,6 +77,7 @@ public class PlayerHealthTouchEffect : MonoBehaviour
         // If it is:
         // - Heal the player by healthChange.
         // - Print the amount healed if debug logs are enabled.
+        // DONE
 
 
 
@@ -63,6 +87,7 @@ public class PlayerHealthTouchEffect : MonoBehaviour
         // If it is:
         // - Damage the player using the positive version of healthChange.
         // - Print the amount of damage if debug logs are enabled.
+        // DONE
 
 
 
@@ -70,12 +95,14 @@ public class PlayerHealthTouchEffect : MonoBehaviour
 
         // TODO: Otherwise, healthChange must be 0.
         // If debug logs are enabled, print that no effect occurred.
+        // DONE
 
 
 
 
 
         // TODO: Call the function that plays the feedback.
+        PlayFeedback();
 
 
 

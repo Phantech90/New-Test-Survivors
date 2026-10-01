@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40752aaa980e5224987f3539705b86b3
+guid: abf274cf98bb52f46ac0e06d78fb1fbe
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: RestoreHealth
+  - name: Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
+    pivot: {x: 0.5, y: -0.25}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -134,8 +134,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 28
-      height: 28
-    spriteID: 32ea926144ff2e448829e495e4a12afe
+      height: 24
+    spriteID: 25f2900d56940934a825021f918aa09b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,17 +146,17 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.071428575}
+    pivot: {x: 0.5, y: -0.25}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 40
+      y: 36
       width: 28
-      height: 28
-    spriteID: 8fee3e05a420bc749bf1c1d1586e4bfa
+      height: 24
+    spriteID: fc954f87e319e1d418be9b8a42d992e9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -164,17 +164,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 40}
+    uvTransform: {x: 4, y: 36}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 3212626102
+      value0: 3277562082
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: RestoreHealth
+    name: EraseHealth
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -184,19 +184,19 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 2
+        y: 6
         width: 28
-        height: 28
-      spriteId: 32ea926144ff2e448829e495e4a12afe
+        height: 24
+      spriteId: 25f2900d56940934a825021f918aa09b
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 2
+        y: 6
         width: 28
-        height: 28
-      spriteId: 8fee3e05a420bc749bf1c1d1586e4bfa
+        height: 24
+      spriteId: fc954f87e319e1d418be9b8a42d992e9
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -216,4 +216,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 64, y: 128}
+  previousTextureSize: {x: 64, y: 64}
