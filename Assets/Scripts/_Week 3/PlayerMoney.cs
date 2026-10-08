@@ -4,8 +4,6 @@ using TMPro;
 
 public class PlayerMoney : MonoBehaviour
 {
-    // Complete each section marked TODO.
-
     [Header("Money")]
     public int startingMoney = 0;
     public int currentMoney;
@@ -30,12 +28,14 @@ public class PlayerMoney : MonoBehaviour
 
     private void Start()
     {
-        // TODO: Set the player's current money
+        // Set the player's current money
         // to their starting money.
+        currentMoney = startingMoney;
 
 
 
-        // TODO: Call the function that updates the money UI.
+        // Call the function that updates the money UI.
+        UpdateMoneyUI();
 
 
 
@@ -59,7 +59,8 @@ public class PlayerMoney : MonoBehaviour
         // call AddMoney and give it debugAddAmount.
         if (Keyboard.current[addMoneyKey].wasPressedThisFrame)
         {
-            // TODO: Call AddMoney and give it debugAddAmount.
+            // Call AddMoney and give it debugAddAmount.
+            AddMoney(debugAddAmount);
 
         }
 
@@ -67,7 +68,8 @@ public class PlayerMoney : MonoBehaviour
         // call SpendMoney and give it debugSpendAmount.
         if (Keyboard.current[spendMoneyKey].wasPressedThisFrame)
         {
-            // TODO: Call SpendMoney and give it debugSpendAmount.
+            // Call SpendMoney and give it debugSpendAmount.
+            SpendMoney(debugSpendAmount);
 
         }
     }
@@ -79,19 +81,23 @@ public class PlayerMoney : MonoBehaviour
             return;
         }
 
-        // TODO: Add amount to the player's current money.
+        // Add amount to the player's current money.
+        currentMoney += amount;
 
 
-
-        // TODO: Call the function that updates the money UI.
-
+        // Call the function that updates the money UI.
+        UpdateMoneyUI();
 
     }
 
     public bool CanAfford(int amount)
     {
-        // TODO: Return true if the player has enough money
+        // Return true if the player has enough money
         // to afford the amount.
+        if (currentMoney >= amount)
+        {
+            return true;
+        }
 
         return false;
     }
@@ -117,13 +123,14 @@ public class PlayerMoney : MonoBehaviour
             return false;
         }
 
-        // TODO: Subtract amount from the player's current money.
+        // Subtract amount from the player's current money.
+        currentMoney -= amount;
 
 
+        // Call the function that updates the money UI.
+        UpdateMoneyUI();
 
-        // TODO: Call the function that updates the money UI.
-
-
+        Debug.Log("Player spent " + amount + " money, and now has " + currentMoney + " remaining");
 
         return true;
     }
@@ -140,16 +147,17 @@ public class PlayerMoney : MonoBehaviour
             return;
         }
 
-        // TODO: Update the money text using moneyPrefix
+        // Update the money text using moneyPrefix
         // and the player's current money.
+        moneyText.text = currentMoney.ToString();
 
 
 
         if (gameOverMoneyText != null)
         {
-            // TODO: Display the player's current money
+            // Display the player's current money
             // on the Game Over screen.
-
+            gameOverMoneyText.text = currentMoney.ToString();
         }
     }
 }
