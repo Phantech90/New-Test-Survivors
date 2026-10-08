@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -22,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer playerSpriteRenderer;
     public bool faceRightByDefault = true;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip[] footstepSounds;
+
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
@@ -37,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
         if (playerSpriteRenderer == null)
         {
             playerSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        }
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
         }
         acidBladeSprite.enabled = hasAcidBlade;
     }
@@ -132,5 +142,28 @@ public class PlayerMovement : MonoBehaviour
             playerSpriteRenderer.flipX = faceRightByDefault;
             acidBladeSprite.flipX = faceRightByDefault;
         }
+    }
+
+
+    /// <summary>
+    /// Checks if footsteps are already playing, 
+    /// if it is, return.
+    /// if not, plays a footstep sound effect
+    /// </summary>
+    public void PlayFootstepSound()
+    {
+        if (audioSource == null || footstepSounds == null)
+        {
+            return;
+        }
+        if (audioSource.isPlaying)
+        {
+            if (audioSource.clip.Equals(footstepSounds))
+            {
+                return;
+            }
+        }
+        int randomFootstep = Random.Range(1, footstepSounds.Length);
+        audioSource.PlayOneShot(footstepSounds[randomFootstep]);
     }
 }
