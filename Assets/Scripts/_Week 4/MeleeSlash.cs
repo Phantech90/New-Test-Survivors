@@ -1,10 +1,9 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class MeleeSlash : MonoBehaviour
 {
-    // Complete each section marked TODO.
-
     [Header("Slash Settings")]
     public float lifetime = 0.25f;
     public int damage = 5;
@@ -14,11 +13,15 @@ public class MeleeSlash : MonoBehaviour
 
     private void Awake()
     {
-        // TODO: Get the Collider2D component from this GameObject.
-        Collider2D col = null;
+        // Get the Collider2D component from this GameObject.
+        Collider2D col = GetComponent<Collider2D>();
 
-        // TODO: Check that col is not null.
+        // Check that col is not null.
         // If it exists, set it to be a trigger.
+        if (col != null)
+        {
+            col.isTrigger = true;
+        }
 
 
     }
@@ -31,24 +34,24 @@ public class MeleeSlash : MonoBehaviour
 
     public void Initialize(int damageAmount)
     {
-        // TODO: Set damage to the damageAmount passed into this function.
-
-
+        // Set damage to the damageAmount passed into this function.
+        damage = damageAmount;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // TODO: Try to get the EnemyHealth component from the object that entered the trigger.
-        EnemyHealth enemy = null;
+        // Try to get the EnemyHealth component from the object that entered the trigger.
+        EnemyHealth enemy = other.GetComponent<EnemyHealth>();
 
-        // TODO: Check that enemy is not null.
+        // Check that enemy is not null.
         if (enemy != null)
         {
-            // TODO: Call the enemy's TakeDamage function and give it this slash's damage amount.
+            // Call the enemy's TakeDamage function and give it this slash's damage amount.
+            enemy.TakeDamage(damage);
 
-
-            // TODO: If debug logs are enabled, print the enemy hit and damage dealt.
-
+            // If debug logs are enabled, print the enemy hit and damage dealt.
+            if (showDebugLogs)
+                Debug.Log($"enemy {enemy.name} was hit for {damage} damage");
 
         }
     }

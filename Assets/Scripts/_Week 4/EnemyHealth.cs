@@ -5,8 +5,6 @@ using UnityEngine.InputSystem;
 
 public class EnemyHealth : MonoBehaviour
 {
-    // Complete each section marked TODO.
-
     [Header("Health")]
     public int maxHP = 3;
     public int currentHP;
@@ -309,7 +307,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void PlayDeathSound()
     {
-        // TODO: Check that both audioSource and deathSound are not null.
+        // Check that both audioSource and deathSound are not null.
         // If they exist, play deathSound using the AudioSource.
         if (audioSource != null && deathSound != null)
         {
