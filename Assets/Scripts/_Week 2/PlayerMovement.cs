@@ -15,9 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public string isMovingParameter = "isMoving";
 
     [Header("Weapons")]
-    public bool hasAcidBlade = true;
-    public SpriteRenderer acidBladeSprite;
-    public Animator acidBladeAnimator;
+    public bool[] hasWeapon;
+    public WeaponVisuals[] weaponVisuals;
 
     [Header("Sprite")]
     public SpriteRenderer playerSpriteRenderer;
@@ -25,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource audioSource;
-    public AudioClip[] footstepSounds;
+    public AudioClip footstepSounds;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -48,7 +47,10 @@ public class PlayerMovement : MonoBehaviour
         {
             audioSource = GetComponent<AudioSource>();
         }
-        acidBladeSprite.enabled = hasAcidBlade;
+        for (int i = 0; i < weaponVisuals.Length; i++)
+        {
+            CheckWeapon(i);
+        }
     }
 
     private void Update()
@@ -120,7 +122,10 @@ public class PlayerMovement : MonoBehaviour
 
         // Update the movement animation.
         animator.SetBool(isMovingParameter, isMoving);
-        acidBladeAnimator.SetBool(isMovingParameter, isMoving);
+        for (int i = 0; i < weaponVisuals.Length; i++)
+        {
+            weaponVisuals[i].weaponAnimator.SetBool(isMovingParameter, isMoving);
+        }
     }
 
     private void UpdateSpriteFlip()
@@ -135,13 +140,30 @@ public class PlayerMovement : MonoBehaviour
         if (moveInput.x > 0f)
         {
             playerSpriteRenderer.flipX = !faceRightByDefault;
-            acidBladeSprite.flipX = !faceRightByDefault;
+            for (int i = 0; i < weaponVisuals.Length; i++)
+            {
+                weaponVisuals[i].weaponSprite.flipX = !faceRightByDefault;
+            }
         }
         else if (moveInput.x < 0f)
         {
             playerSpriteRenderer.flipX = faceRightByDefault;
-            acidBladeSprite.flipX = faceRightByDefault;
+            for (int i = 0; i < weaponVisuals.Length; i++)
+            {
+                weaponVisuals[i].weaponSprite.flipX = faceRightByDefault;
+            }
         }
+    }
+
+    // Check the weapon script and enable the weapons visuals
+    public void CheckWeapon(int weapon)
+    {
+        if (weaponVisuals[weapon] != null)
+        {
+            weaponVisuals[weapon].weaponSprite.enabled = hasWeapon[weapon];
+            weaponVisuals[weapon].weaponAnimator.enabled = hasWeapon[weapon];
+        }
+        else { Debug.LogWarning("Weapon " + weapon + " visuals do not exist"); }
     }
 
 
@@ -152,10 +174,6 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     public void PlayFootstepSound()
     {
-        if (audioSource == null || footstepSounds == null)
-        {
-            return;
-        }
         if (audioSource.isPlaying)
         {
             if (audioSource.clip.Equals(footstepSounds))
@@ -163,7 +181,10 @@ public class PlayerMovement : MonoBehaviour
                 return;
             }
         }
-        int randomFootstep = Random.Range(1, footstepSounds.Length);
-        audioSource.PlayOneShot(footstepSounds[randomFootstep]);
+        else if (audioSource != null && footstepSounds != null)
+        {
+            audioSource.PlayOneShot(footstepSounds);
+        }
+        else return;
     }
 }
