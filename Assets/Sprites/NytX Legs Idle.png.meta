@@ -1,67 +1,67 @@
 fileFormatVersion: 2
-guid: 773bd4786698d20458d377f876f1425b
+guid: ae034b6a98f447240bf806ce847a7d10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2714878245376021204
-    second: VmSv Player Idle_0
+      213: -3195263630802751077
+    second: NytX Legs Idle_0
   - first:
-      213: -4047604263567120881
-    second: VmSv Player Idle_1
+      213: 6104418569857459340
+    second: NytX Legs Idle_1
   - first:
-      213: -5157017689715322228
-    second: VmSv Player Idle_2
+      213: 8260551957625986882
+    second: NytX Legs Idle_2
   - first:
-      213: -3613767432913590317
-    second: VmSv Player Idle_3
+      213: -1574974377797967418
+    second: NytX Legs Idle_3
   - first:
-      213: -8367517372259961727
-    second: VmSv Player Idle_4
+      213: 1450963075828818842
+    second: NytX Legs Idle_4
   - first:
-      213: -1145351055532201418
-    second: VmSv Player Idle_5
+      213: 4076937674549706220
+    second: NytX Legs Idle_5
   - first:
-      213: 4411253369186633608
-    second: VmSv Player Idle_6
+      213: 8986057301281997198
+    second: NytX Legs Idle_6
   - first:
-      213: -5244263083765631511
-    second: VmSv Player Idle_7
+      213: -8451517154054015621
+    second: NytX Legs Idle_7
   - first:
-      213: -5229849428438658558
-    second: VmSv Player Idle_8
+      213: 6790599513019239118
+    second: NytX Legs Idle_8
   - first:
-      213: 6017380359579593869
-    second: VmSv Player Idle_9
+      213: 2845041504487369853
+    second: NytX Legs Idle_9
   - first:
-      213: -7684771925937617000
-    second: VmSv Player Idle_10
+      213: -2040186920297703492
+    second: NytX Legs Idle_10
   - first:
-      213: 6177592612445052730
-    second: VmSv Player Idle_11
+      213: -1834128128094666477
+    second: NytX Legs Idle_11
   - first:
-      213: 5331174936207169644
-    second: VmSv Player Idle_12
+      213: 2353543413940294334
+    second: NytX Legs Idle_12
   - first:
-      213: 2411538695637426011
-    second: VmSv Player Idle_13
+      213: 7241777998816451977
+    second: NytX Legs Idle_13
   - first:
-      213: -607516421052257780
-    second: VmSv Player Idle_14
+      213: 244468218046183079
+    second: NytX Legs Idle_14
   - first:
-      213: 7453943900715522624
-    second: VmSv Player Idle_15
+      213: -2963143801980789950
+    second: NytX Legs Idle_15
   - first:
-      213: 7891767990378051441
-    second: VmSv Player Idle_16
+      213: 5844705139312241387
+    second: NytX Legs Idle_16
   - first:
-      213: -3474808507576172321
-    second: VmSv Player Idle_17
+      213: 20613517564506114
+    second: NytX Legs Idle_17
   - first:
-      213: -3473177019016604318
-    second: VmSv Player Idle_18
+      213: -3826160229317627455
+    second: NytX Legs Idle_18
   - first:
-      213: -6523814735316398481
-    second: VmSv Player Idle_19
+      213: 6958441266250459129
+    second: NytX Legs Idle_19
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -196,7 +196,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VmSv Player Idle_0
+      name: NytX Legs Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -211,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2d2defae90d25ad0800000000000000
-      internalID: -2714878245376021204
+      spriteID: b91f64238a428a3d0800000000000000
+      internalID: -3195263630802751077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_1
+      name: NytX Legs Idle_1
       rect:
         serializedVersion: 2
         x: 64
@@ -233,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f06a9be0e5504d7c0800000000000000
-      internalID: -4047604263567120881
+      spriteID: c84e6a0c85047b450800000000000000
+      internalID: 6104418569857459340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_2
+      name: NytX Legs Idle_2
       rect:
         serializedVersion: 2
         x: 128
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c82dc18fbb79e68b0800000000000000
-      internalID: -5157017689715322228
+      spriteID: 24f54fa3d3063a270800000000000000
+      internalID: 8260551957625986882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_3
+      name: NytX Legs Idle_3
       rect:
         serializedVersion: 2
         x: 192
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d76f449aa159ddc0800000000000000
-      internalID: -3613767432913590317
+      spriteID: 6c1a201e521942ae0800000000000000
+      internalID: -1574974377797967418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_4
+      name: NytX Legs Idle_4
       rect:
         serializedVersion: 2
         x: 256
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 184f88e684b90eb80800000000000000
-      internalID: -8367517372259961727
+      spriteID: a932cfcda3bd22410800000000000000
+      internalID: 1450963075828818842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_5
+      name: NytX Legs Idle_5
       rect:
         serializedVersion: 2
         x: 320
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63a62e78845ea10f0800000000000000
-      internalID: -1145351055532201418
+      spriteID: ced31f6e631349830800000000000000
+      internalID: 4076937674549706220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_6
+      name: NytX Legs Idle_6
       rect:
         serializedVersion: 2
         x: 384
@@ -343,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8874d94419be73d30800000000000000
-      internalID: 4411253369186633608
+      spriteID: e81083e5183e4bc70800000000000000
+      internalID: 8986057301281997198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_7
+      name: NytX Legs Idle_7
       rect:
         serializedVersion: 2
         x: 448
@@ -365,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e57477b282a837b0800000000000000
-      internalID: -5244263083765631511
+      spriteID: b757d7b2ded26ba80800000000000000
+      internalID: -8451517154054015621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_8
+      name: NytX Legs Idle_8
       rect:
         serializedVersion: 2
         x: 512
@@ -387,14 +387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 202522d57a7db67b0800000000000000
-      internalID: -5229849428438658558
+      spriteID: ecac379674e0d3e50800000000000000
+      internalID: 6790599513019239118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_9
+      name: NytX Legs Idle_9
       rect:
         serializedVersion: 2
         x: 576
@@ -409,14 +409,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8c672b3e87028350800000000000000
-      internalID: 6017380359579593869
+      spriteID: d7c6636bc2e9b7720800000000000000
+      internalID: 2845041504487369853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_10
+      name: NytX Legs Idle_10
       rect:
         serializedVersion: 2
         x: 640
@@ -431,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 897089626a43a5590800000000000000
-      internalID: -7684771925937617000
+      spriteID: cb7d14c2ecccfa3e0800000000000000
+      internalID: -2040186920297703492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_11
+      name: NytX Legs Idle_11
       rect:
         serializedVersion: 2
         x: 704
@@ -453,14 +453,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3f5ddf20c73bb550800000000000000
-      internalID: 6177592612445052730
+      spriteID: 3118d546f2edb86e0800000000000000
+      internalID: -1834128128094666477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_12
+      name: NytX Legs Idle_12
       rect:
         serializedVersion: 2
         x: 768
@@ -475,14 +475,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c681814db532cf940800000000000000
-      internalID: 5331174936207169644
+      spriteID: eb21f5fe34779a020800000000000000
+      internalID: 2353543413940294334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_13
+      name: NytX Legs Idle_13
       rect:
         serializedVersion: 2
         x: 832
@@ -497,14 +497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5fd393baa1877120800000000000000
-      internalID: 2411538695637426011
+      spriteID: 98d91b9a8b6ff7460800000000000000
+      internalID: 7241777998816451977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_14
+      name: NytX Legs Idle_14
       rect:
         serializedVersion: 2
         x: 896
@@ -519,14 +519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0aa6f7a80ba197f0800000000000000
-      internalID: -607516421052257780
+      spriteID: 7a6f38f8c86846300800000000000000
+      internalID: 244468218046183079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_15
+      name: NytX Legs Idle_15
       rect:
         serializedVersion: 2
         x: 960
@@ -541,14 +541,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04a96d92c7ab17760800000000000000
-      internalID: 7453943900715522624
+      spriteID: 24bd888596cc0e6d0800000000000000
+      internalID: -2963143801980789950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_16
+      name: NytX Legs Idle_16
       rect:
         serializedVersion: 2
         x: 1024
@@ -563,14 +563,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1773844cc21358d60800000000000000
-      internalID: 7891767990378051441
+      spriteID: bea2b9d8b509c1150800000000000000
+      internalID: 5844705139312241387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_17
+      name: NytX Legs Idle_17
       rect:
         serializedVersion: 2
         x: 1088
@@ -585,14 +585,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd0ca6b921007cfc0800000000000000
-      internalID: -3474808507576172321
+      spriteID: 200f00092eb394000800000000000000
+      internalID: 20613517564506114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_18
+      name: NytX Legs Idle_18
       rect:
         serializedVersion: 2
         x: 1152
@@ -607,14 +607,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 265177327ebcccfc0800000000000000
-      internalID: -3473177019016604318
+      spriteID: 1c1bbc51b8fb6eac0800000000000000
+      internalID: -3826160229317627455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VmSv Player Idle_19
+      name: NytX Legs Idle_19
       rect:
         serializedVersion: 2
         x: 1216
@@ -629,8 +629,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6ec1091011c675a0800000000000000
-      internalID: -6523814735316398481
+      spriteID: 9f72749d679519060800000000000000
+      internalID: 6958441266250459129
       vertices: []
       indices: 
       edges: []
@@ -639,7 +639,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 23f3dee399f2c2d4bb7aa2ce92ce1607
+    spriteID: fb30c4c9801c72b4eb8714f331147af9
     internalID: 0
     vertices: []
     indices: 
@@ -649,26 +649,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      VmSv Player Idle_0: -2714878245376021204
-      VmSv Player Idle_1: -4047604263567120881
-      VmSv Player Idle_10: -7684771925937617000
-      VmSv Player Idle_11: 6177592612445052730
-      VmSv Player Idle_12: 5331174936207169644
-      VmSv Player Idle_13: 2411538695637426011
-      VmSv Player Idle_14: -607516421052257780
-      VmSv Player Idle_15: 7453943900715522624
-      VmSv Player Idle_16: 7891767990378051441
-      VmSv Player Idle_17: -3474808507576172321
-      VmSv Player Idle_18: -3473177019016604318
-      VmSv Player Idle_19: -6523814735316398481
-      VmSv Player Idle_2: -5157017689715322228
-      VmSv Player Idle_3: -3613767432913590317
-      VmSv Player Idle_4: -8367517372259961727
-      VmSv Player Idle_5: -1145351055532201418
-      VmSv Player Idle_6: 4411253369186633608
-      VmSv Player Idle_7: -5244263083765631511
-      VmSv Player Idle_8: -5229849428438658558
-      VmSv Player Idle_9: 6017380359579593869
+      NytX Legs Idle_0: -3195263630802751077
+      NytX Legs Idle_1: 6104418569857459340
+      NytX Legs Idle_10: -2040186920297703492
+      NytX Legs Idle_11: -1834128128094666477
+      NytX Legs Idle_12: 2353543413940294334
+      NytX Legs Idle_13: 7241777998816451977
+      NytX Legs Idle_14: 244468218046183079
+      NytX Legs Idle_15: -2963143801980789950
+      NytX Legs Idle_16: 5844705139312241387
+      NytX Legs Idle_17: 20613517564506114
+      NytX Legs Idle_18: -3826160229317627455
+      NytX Legs Idle_19: 6958441266250459129
+      NytX Legs Idle_2: 8260551957625986882
+      NytX Legs Idle_3: -1574974377797967418
+      NytX Legs Idle_4: 1450963075828818842
+      NytX Legs Idle_5: 4076937674549706220
+      NytX Legs Idle_6: 8986057301281997198
+      NytX Legs Idle_7: -8451517154054015621
+      NytX Legs Idle_8: 6790599513019239118
+      NytX Legs Idle_9: 2845041504487369853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

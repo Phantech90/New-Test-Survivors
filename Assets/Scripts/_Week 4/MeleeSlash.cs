@@ -22,8 +22,6 @@ public class MeleeSlash : MonoBehaviour
         {
             col.isTrigger = true;
         }
-
-
     }
 
     private void Start()
