@@ -56,7 +56,7 @@ public class EnemyHealth : MonoBehaviour
     {
         // Check if spriteRenderer is null.
         // If it is, get the SpriteRenderer component from this GameObject.
-        if (spriteRenderer == null) { spriteRenderer = GetComponent<SpriteRenderer>(); }
+        if (spriteRenderer == null) { spriteRenderer = GetComponentInChildren<SpriteRenderer>(); }
 
         // Check that spriteRenderer is not null.
         // If it exists, store its current colour in originalColor.
@@ -206,7 +206,7 @@ public class EnemyHealth : MonoBehaviour
     {
         // Check whether the enemy is already dead.
         // If it is, stop the function.
-        if (!isDead == true) { return; }
+        if (isDead == true) { return; }
 
         // Set isDead to true.
         isDead = true;
