@@ -1,3 +1,5 @@
+using Mono.Cecil;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
@@ -9,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed = 5f;
+    public float dashSpeed = 2f;
 
     [Header("Animation")]
     public Animator animator;
@@ -25,6 +28,14 @@ public class PlayerMovement : MonoBehaviour
     [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip footstepSounds;
+
+    [Header("Cooldown")]
+    public float dashCooldown = 4f;
+    public float dashTimer = 0f;
+    public float dashLength = 0.5f;
+    public float dashLengthTime = 0f;
+    public bool dashing = false;
+    public bool fireDash = false;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -58,6 +69,17 @@ public class PlayerMovement : MonoBehaviour
         ReadMovementInput();
         UpdateAnimation();
         UpdateSpriteFlip();
+
+        // countdown the dash timer, unless currently dashing, in which count down the dash lenght timer instead
+        if (!dashing)
+        {
+            dashTimer -= Time.deltaTime;
+        }
+        else
+        {
+            dashLengthTime -= Time.deltaTime;
+        }
+
     }
 
     private void ReadMovementInput()
@@ -102,12 +124,37 @@ public class PlayerMovement : MonoBehaviour
         {
             moveInput = moveInput.normalized;
         }
+        if (Keyboard.current.shiftKey.isPressed && dashTimer <= 0)
+        {
+            dashTimer = dashCooldown;
+            dashLengthTime = dashLength;
+            dashing = true;
+            fireDash = true;
+        }
     }
 
     private void FixedUpdate()
     {
         // Apply the movement direction and speed to the Rigidbody.
-        rb.linearVelocity = moveInput * moveSpeed;
+        // if dashing and dash length is positive, apply dash force.
+        if (dashing && dashLengthTime > 0)
+        {
+            if (fireDash)
+            {
+                rb.AddForce(moveInput * dashSpeed, ForceMode2D.Impulse);
+                fireDash = false;
+            }
+        }
+        // else if dashing and dash length is negative, reset dashing to false
+        else if (dashing && dashLengthTime <= 0)
+        {
+            dashing = false;
+        }
+        // if false, apply typical force
+        else
+        {
+            rb.linearVelocity = moveInput * moveSpeed;
+        }
     }
 
     private void UpdateAnimation()

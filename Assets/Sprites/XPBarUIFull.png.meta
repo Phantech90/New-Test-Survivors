@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: a07ccf26759c83d4f9f690d8757f1827
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8967218021586749808
+    second: XPBarUIFull_0
+  - first:
+      213: -7650920819866076276
+    second: XPBarUIFull_1
+  - first:
+      213: 6271344829200434165
+    second: XPBarUIFull_2
+  - first:
+      213: 8622107414982310798
+    second: XPBarUIFull_3
+  - first:
+      213: -2318058286866300557
+    second: XPBarUIFull_4
+  - first:
+      213: -5674082435272181070
+    second: XPBarUIFull_5
+  - first:
+      213: -5829776981952836781
+    second: XPBarUIFull_6
+  - first:
+      213: 684463916871294346
+    second: XPBarUIFull_7
+  - first:
+      213: 4986521733812398753
+    second: XPBarUIFull_8
+  - first:
+      213: 5056828585914799639
+    second: XPBarUIFull_9
+  - first:
+      213: -6330202590379028762
+    second: XPBarUIFull_10
+  - first:
+      213: -4490960797716148686
+    second: XPBarUIFull_11
+  - first:
+      213: 3211075913168140194
+    second: XPBarUIFull_12
+  - first:
+      213: -6338652053643226086
+    second: XPBarUIFull_13
+  - first:
+      213: -5039229067863798208
+    second: XPBarUIFull_14
+  - first:
+      213: -3027168761691060580
+    second: XPBarUIFull_15
+  - first:
+      213: 8436275054877635068
+    second: XPBarUIFull_16
+  - first:
+      213: -4613424329967619462
+    second: XPBarUIFull_17
+  - first:
+      213: 5134507554344867983
+    second: XPBarUIFull_18
+  - first:
+      213: -1979536536554765010
+    second: XPBarUIFull_19
+  - first:
+      213: 9141286717360415471
+    second: XPBarUIFull_20
+  - first:
+      213: 7557624863155797470
+    second: XPBarUIFull_21
+  - first:
+      213: -3985429262765206151
+    second: XPBarUIFull_22
+  - first:
+      213: -3877630147090300391
+    second: XPBarUIFull_23
+  - first:
+      213: 7314400435312212258
+    second: XPBarUIFull_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: XPBarUIFull_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 247
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09637df38ba0e8380800000000000000
+      internalID: -8967218021586749808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 264
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8bfd37fc0872d590800000000000000
+      internalID: -7650920819866076276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 271
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3897825ea480750800000000000000
+      internalID: 6271344829200434165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 273
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b38451301e7a770800000000000000
+      internalID: 8622107414982310798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 276
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3710faa054a94dfd0800000000000000
+      internalID: -2318058286866300557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 277
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba7153761c9141b0800000000000000
+      internalID: -5674082435272181070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 277
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bc3fee8b8781fa0800000000000000
+      internalID: -5829776981952836781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 278
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d9fa25e44bf7900800000000000000
+      internalID: 684463916871294346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 279
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa27a0e81fa33540800000000000000
+      internalID: 4986521733812398753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 279
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7161e718ec67d2640800000000000000
+      internalID: 5056828585914799639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_10
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 279
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee433c684a9628a0800000000000000
+      internalID: -6330202590379028762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_11
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 280
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e8ce7d2f6eca1c0800000000000000
+      internalID: -4490960797716148686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 280
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7333fa788009c20800000000000000
+      internalID: 3211075913168140194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 280
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a149bc37a859808a0800000000000000
+      internalID: -6338652053643226086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_14
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 279
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ec72c9cdf011ab0800000000000000
+      internalID: -5039229067863798208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_15
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 279
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96ce34cc065df5d0800000000000000
+      internalID: -3027168761691060580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_16
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 279
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf17871177ba31570800000000000000
+      internalID: 8436275054877635068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_17
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 278
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72b22ec303d9ffb0800000000000000
+      internalID: -4613424329967619462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_18
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 277
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f881949ba6f614740800000000000000
+      internalID: 5134507554344867983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_19
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 277
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e250fbe02064784e0800000000000000
+      internalID: -1979536536554765010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_20
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 276
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2a34a36df5cde70800000000000000
+      internalID: 9141286717360415471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_21
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 273
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddbf0265c312e860800000000000000
+      internalID: 7557624863155797470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_22
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 271
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975de638339e0b8c0800000000000000
+      internalID: -3985429262765206151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_23
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 264
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91246500de3ef2ac0800000000000000
+      internalID: -3877630147090300391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XPBarUIFull_24
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 247
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2293fbb4178f18560800000000000000
+      internalID: 7314400435312212258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      XPBarUIFull_0: -8967218021586749808
+      XPBarUIFull_1: -7650920819866076276
+      XPBarUIFull_10: -6330202590379028762
+      XPBarUIFull_11: -4490960797716148686
+      XPBarUIFull_12: 3211075913168140194
+      XPBarUIFull_13: -6338652053643226086
+      XPBarUIFull_14: -5039229067863798208
+      XPBarUIFull_15: -3027168761691060580
+      XPBarUIFull_16: 8436275054877635068
+      XPBarUIFull_17: -4613424329967619462
+      XPBarUIFull_18: 5134507554344867983
+      XPBarUIFull_19: -1979536536554765010
+      XPBarUIFull_2: 6271344829200434165
+      XPBarUIFull_20: 9141286717360415471
+      XPBarUIFull_21: 7557624863155797470
+      XPBarUIFull_22: -3985429262765206151
+      XPBarUIFull_23: -3877630147090300391
+      XPBarUIFull_24: 7314400435312212258
+      XPBarUIFull_3: 8622107414982310798
+      XPBarUIFull_4: -2318058286866300557
+      XPBarUIFull_5: -5674082435272181070
+      XPBarUIFull_6: -5829776981952836781
+      XPBarUIFull_7: 684463916871294346
+      XPBarUIFull_8: 4986521733812398753
+      XPBarUIFull_9: 5056828585914799639
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

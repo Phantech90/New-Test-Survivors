@@ -64,7 +64,7 @@ public class CoinPickup : MonoBehaviour
         // - Print a debug message if debug logs are enabled.
         if (money != null)
         {
-            moneyAmount += money.currentMoney;
+            money.AddMoney(moneyAmount);
             if (showDebugLogs)
             {
                 Debug.Log("added " +  moneyAmount + " to player money");

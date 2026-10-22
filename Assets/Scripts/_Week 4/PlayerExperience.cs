@@ -184,7 +184,7 @@ public class PlayerExperience : MonoBehaviour
         }
 
         // Display the player's current level.
-        levelText.text = level.ToString();
+        levelText.text = ($"LVL {level}");
 
         // Check that gameOverLevelText is not null.
         // If it exists, display the level reached on the Game Over screen.
