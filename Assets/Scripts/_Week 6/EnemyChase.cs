@@ -81,7 +81,7 @@ public class EnemyChase : MonoBehaviour
 
 
         // TODO: Move the enemy using moveDirection and moveSpeed.
-        rb.MovePosition(moveDirection.normalized * moveSpeed);
+        rb.MovePosition((Vector2)transform.position + moveDirection * Time.deltaTime * moveSpeed);
 
 
         // TODO: Call the function that updates the animation.
