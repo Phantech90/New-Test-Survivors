@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SingleMeleeAutoAttack : MonoBehaviour
 {
@@ -104,7 +105,7 @@ public class SingleMeleeAutoAttack : MonoBehaviour
         attackTimer -= Time.deltaTime;
 
         // When the timer reaches 0, attack and reset the timer.
-        if (attackTimer <= 0f)
+        if (attackTimer <= 0f && Mouse.current.leftButton.isPressed)
         {
             // Call the Attack function.
             Attack();

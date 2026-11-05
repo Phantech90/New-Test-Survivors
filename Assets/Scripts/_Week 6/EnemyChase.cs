@@ -101,7 +101,7 @@ public class EnemyChase : MonoBehaviour
         }
         bool isMoving = false;
         // TODO: Create a bool that checks whether the enemy is moving.
-        if (rb.totalForce != Vector2.zero)
+        if (moveDirection != Vector2.zero)
         {
             isMoving = true;
         }
