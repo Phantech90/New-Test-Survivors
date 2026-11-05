@@ -69176,14 +69176,11 @@ MonoBehaviour:
   useAttackAnimation: 1
   attackTriggerName: Attack
   isAttackingName: Attacking
-  facingRight: 1
-  faceRightByDefault: 1
   attacksEnabled: 1
   damage: 5
   cooldown: 1
   weaponID: 0
   emitterLocation: {fileID: 1888068451}
-  flipBulletWhenFacingLeft: 1
   showDebugLogs: 1
   attackTimer: 0
 --- !u!1 &1409995227
