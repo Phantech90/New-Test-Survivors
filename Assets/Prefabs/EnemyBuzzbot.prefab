@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8773114313188298655}
   - component: {fileID: 2195869679651084288}
   - component: {fileID: 2268652941667855507}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBuzzbot
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7588559609418692108}
   - component: {fileID: 2573173277046726189}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

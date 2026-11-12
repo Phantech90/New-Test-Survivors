@@ -12,7 +12,6 @@ public class ProjectileAttack : MonoBehaviour
     public Animator animator;
     public bool useAttackAnimation = true;
     public string attackTriggerName = "Attack";
-    public string isAttackingName = "Attacking";
 
     [Header("Facing")]
 
@@ -20,7 +19,7 @@ public class ProjectileAttack : MonoBehaviour
     public bool attacksEnabled = true;
     public int damage = 5;
     public float cooldown = 1f;
-    public int weaponID;
+    public int weaponID = 2;
 
     [Header("Bullet Position")]
     public Transform emitterLocation;
@@ -33,12 +32,15 @@ public class ProjectileAttack : MonoBehaviour
 
     private void Start()
     {
-
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
     {
-        UpdateAutoAttack();
+        if (playerMovement.hasWeapon[2] == true)
+        {
+            UpdateAutoAttack();
+        }
     }
 
 
@@ -96,11 +98,10 @@ public class ProjectileAttack : MonoBehaviour
         // Play the attack animation.
         animator.SetTrigger(attackTriggerName);
         for (int i = 0; i < playerMovement.weaponVisuals.Length; i++)
-        {
-            playerMovement.weaponVisuals[i].weaponAnimator.SetTrigger(isAttackingName);
-        }
+            playerMovement.weaponVisuals[i].weaponAnimator.SetBool("playerAttacking", true);
 
         playerMovement.weaponVisuals[weaponID].weaponAnimator.SetTrigger(attackTriggerName);
+        playerMovement.weaponVisuals[weaponID].currentIdle = false;
 
         if (showDebugLogs == true)
         {

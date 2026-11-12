@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4889051367359229596}
   - component: {fileID: 7299427415540394266}
   - component: {fileID: 9181549148197837426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyBugkill
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8722704344418442491}
   - component: {fileID: 2625647238202952156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

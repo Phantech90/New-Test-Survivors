@@ -17,6 +17,7 @@ public class PlayerExperience : MonoBehaviour
     [Header("Level UI")]
     public TextMeshProUGUI levelText;
     public bool useLevelText = true;
+    public LevelUpMenu levelUpMenu;
 
     [Header("Debug")]
     public bool enableDebugKeys = true;
@@ -28,6 +29,9 @@ public class PlayerExperience : MonoBehaviour
 
     private void Start()
     {
+        levelUpMenu = GameObject.Find("GameManager").GetComponent<LevelUpMenu>();
+        if (levelUpMenu == null)
+            Debug.LogError("No Level up Menu assigned!");
         // Call the function that sets up the XP slider.
         SetupXpSlider();
 
@@ -43,7 +47,7 @@ public class PlayerExperience : MonoBehaviour
 
         // Print the player's starting level and XP to the Console.
         Debug.Log($"player starting level is {level}");
-
+        
     }
 
     private void Update()
@@ -96,11 +100,8 @@ public class PlayerExperience : MonoBehaviour
         // Remove the required XP from the player's current XP.
         currentXP -= xpToNextLevel;
 
-
-
         // Increase the player's level by 1.
         level++;
-
 
         // Print the player's new level to the Console.
         Debug.Log($"Player's level is now {level}");
@@ -123,8 +124,11 @@ public class PlayerExperience : MonoBehaviour
         {
             LevelUp();
         }
-
-
+        if (levelUpMenu != null)
+        {
+            levelUpMenu.levelsToProcess++;
+            levelUpMenu.EnableMenu();
+        }
         // Call the function that updates the XP UI.
         UpdateXpUI();
 

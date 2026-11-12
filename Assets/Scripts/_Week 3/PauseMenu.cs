@@ -16,7 +16,6 @@ public class PauseMenu : MonoBehaviour
         // Hide the pause menu when the game starts.
         pauseMenu.SetActive(false);
     }
-
     private void Update()
     {
         if (Keyboard.current == null)

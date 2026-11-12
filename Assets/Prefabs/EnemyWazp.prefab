@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5733642006495535654}
   - component: {fileID: 8368691035302418549}
   - component: {fileID: 723925021487598349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyWazp
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5790349365184269428}
   - component: {fileID: 7748706565969895092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

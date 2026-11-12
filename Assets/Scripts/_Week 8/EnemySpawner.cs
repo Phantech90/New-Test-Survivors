@@ -170,11 +170,8 @@ public class EnemySpawner : MonoBehaviour
             
 
 
-        // TODO: Play the animation stored in idleAnimationName.
-        animator.Play(idleAnimationName);
 
-
-        // TODO: If debug logs are enabled, print the animation being played.
+        // If debug logs are enabled, print the animation being played.
         if (showDebugLogs)
             Debug.Log("Animation is playing");
 
@@ -182,19 +179,19 @@ public class EnemySpawner : MonoBehaviour
 
     private void HandleDebugInput()
     {
-        // TODO: Check whether debug keys are disabled.
+        // Check whether debug keys are disabled.
         // If they are, stop this function.
         if (!enableDebugKeys)
             return;
 
 
-        // TODO: Check whether Keyboard.current is null.
+        // Check whether Keyboard.current is null.
         // If it is, stop this function.
         if (Keyboard.current == null)
             return;
 
 
-        // TODO: Check whether toggleSpawnKey was pressed.
+        // Check whether toggleSpawnKey was pressed.
         // If it was:
         // - Toggle spawningEnabled between true and false.
         // - Print the new value if debug logs are enabled.

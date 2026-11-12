@@ -7,6 +7,7 @@ public class SingleMeleeAutoAttack : MonoBehaviour
     public GameObject slashPrefab;
     public SpriteRenderer playerSpriteRenderer;
     public PlayerMovement playerMovement;
+    public int weaponID = 1;
 
     [Header("Animation")]
     public Animator animator;
@@ -68,8 +69,11 @@ public class SingleMeleeAutoAttack : MonoBehaviour
 
     private void Update()
     {
-        UpdateFacingFromSprite();
-        UpdateAutoAttack();
+        if (playerMovement.hasWeapon[1] == true)
+        {
+            UpdateFacingFromSprite();
+            UpdateAutoAttack();
+        }
     }
 
     private void UpdateFacingFromSprite()
@@ -105,7 +109,7 @@ public class SingleMeleeAutoAttack : MonoBehaviour
         attackTimer -= Time.deltaTime;
 
         // When the timer reaches 0, attack and reset the timer.
-        if (attackTimer <= 0f && Mouse.current.leftButton.isPressed)
+        if (attackTimer <= 0f && Mouse.current.rightButton.isPressed)
         {
             // Call the Attack function.
             Attack();
@@ -148,7 +152,10 @@ public class SingleMeleeAutoAttack : MonoBehaviour
         // Play the attack animation.
         animator.SetTrigger(attackTriggerName);
         for (int i = 0; i < playerMovement.weaponVisuals.Length; i++)
-            playerMovement.weaponVisuals[i].weaponAnimator.SetTrigger(attackTriggerName);
+            playerMovement.weaponVisuals[i].weaponAnimator.SetBool("playerAttacking", true);
+
+        playerMovement.weaponVisuals[weaponID].weaponAnimator.SetTrigger(attackTriggerName);
+        playerMovement.weaponVisuals[weaponID].currentIdle = false;
 
         if (showDebugLogs == true)
         {

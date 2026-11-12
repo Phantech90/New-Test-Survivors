@@ -211,7 +211,12 @@ public class PlayerMovement : MonoBehaviour
         }
         else { Debug.LogWarning("Weapon " + weapon + " visuals do not exist"); }
     }
-
+    public void AddWeapon(int weapon)
+    {
+        hasWeapon[weapon] = true;
+        weaponVisuals[weapon].weaponSprite.enabled = hasWeapon[weapon];
+        weaponVisuals[weapon].weaponAnimator.enabled = hasWeapon[weapon];
+    }
 
     /// <summary>
     /// Checks if footsteps are already playing, 
@@ -232,5 +237,22 @@ public class PlayerMovement : MonoBehaviour
             audioSource.PlayOneShot(footstepSounds);
         }
         else return;
+    }
+
+    public void CheckAttacksForIdle()
+    {
+        bool isIdle = true;
+        for (int i = 0; i < weaponVisuals.Length; i++)
+        {
+            if (!weaponVisuals[i].currentIdle)
+                isIdle = false;
+        }
+        if (isIdle)
+        {
+            for (int i = 0; i < weaponVisuals.Length; i++)
+            {
+                weaponVisuals[i].weaponAnimator.SetBool("playerAttacking", false);
+            }
+        } 
     }
 }
